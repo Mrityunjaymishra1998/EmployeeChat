@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity
             }
         };
 
-        DatabaseReference messagesRef = mFirebaseDatabaseReference.child(MESSAGES_CHILD);
+        DatabaseReference messagesRef = mFirebaseDatabaseReference.child(    ).child(MESSAGES_CHILD);
         FirebaseRecyclerOptions<FriendlyMessage> options =
                 new FirebaseRecyclerOptions.Builder<FriendlyMessage>()
                         .setQuery(messagesRef, parser)
